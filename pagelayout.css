@@ -1,0 +1,47 @@
+ul li{
+    display: inline;
+    padding: 10px;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+section{
+    padding: 20px;
+}
+
+figcaption{
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    font-size: larger;
+    background-color: chartreuse;
+}
+
+aside{
+    float: left;
+    width: 160px;
+    height: 190px;
+}
+aside{
+    border: 1px  black solid;
+}
+
+footer{
+    margin-top: 550px;
+}
+
+body{
+    /* background-image: url(./images/4.jpg); */
+    background-image: url(https://picsum.photos/1300/1300);
+}
+
+/*  "*" Universal CSS selector*/
+*{
+    margin: 0;
+
+}

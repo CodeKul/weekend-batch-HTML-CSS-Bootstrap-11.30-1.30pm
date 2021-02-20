@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-Model</title>
+    <style>
+        div{
+            margin: 10px;
+            padding: 5px;
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            box-sizing: border-box;
+        }
+      h1 {
+        border: 2px solid black;
+        padding: 10px;
+        /* width: fit-content; */
+        width: min-content;
+      }
+
+      main {
+        padding: 20px;
+        background-color: lawngreen;
+      }
+
+      address {
+        font-style: normal;
+        margin: auto;
+        padding: 10px 5px 20px 30px;
+      }
+
+      p {
+        margin: auto;
+        padding: inherit;
+        background-color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>BOX MODEL</h1>
+    </header>
+    <main>
+      <section>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, harum
+        numquam dolorem recusandae debitis, deserunt fugit iure aspernatur earum
+        nisi dicta iste ipsum animi id sit mollitia tempora corrupti quos!
+      </section>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+        temporibus accusamus nobis dolore doloribus itaque ratione reprehenderit
+        aut. Quo numquam nobis, modi necessitatibus minima eius quis ut fuga
+        error iure!
+      </p>
+
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque
+        fugiat laboriosam nemo nulla illo? Culpa ad necessitatibus repellat,
+        asperiores laudantium tempora distinctio excepturi minus quaerat
+        repellendus pariatur exercitationem libero!
+      </div>
+    </main>
+
+    <footer>
+      <address>Bandal Capital, Kothrud</address>
+    </footer>
+  </body>
+</html>

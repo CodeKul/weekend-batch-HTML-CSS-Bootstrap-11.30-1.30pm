@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+
+        #banner~span{
+            color: maroon;
+            background-color: mediumorchid;
+        }
+
+      #header > img:hover {
+        transform: rotateY(180deg);
+      }
+
+      img:hover {
+        transform: scaleZ(6);
+      }
+
+      a:visited{
+          color: orangered;
+      }
+
+      a:link{
+          color: rgb(41, 128, 0);
+      }
+
+     
+      p::after{
+          content:'==>' ;
+      }
+
+      img {
+        height: 400px;
+        width: 400px;
+      }
+      #header * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #header p a {
+        background-color: lawngreen;
+        background-color: lightpink;
+        height: 300px;
+        width: 300px;
+      }
+
+      [href] {
+        color: lime;
+        font-size: x-large;
+      }
+
+      .one {
+        background-color: rgb(41, 128, 0);
+      }
+
+      #one {
+        background-color: mediumblue;
+      }
+      p {
+        background-color: mediumspringgreen;
+      }
+
+      div p {
+        background-color: mistyrose;
+      }
+
+      div > a {
+        background-color: royalblue;
+      }
+
+      /* p a{
+            background-color: peru;
+        }
+        #one p a{
+background-color: orangered;
+        } */
+    </style>
+  </head>
+  <body>
+    <!-- selectors
+
+    class selectors
+    id selectors
+    element/type selector
+    universal selectors
+    attribute selectors
+    pseudo class selectors
+    pseudo element selectors 
+    combinator - targetting element by relation between two or multiple elements
+    descendant selector/combinator
+    child slector
+-->
+<div>
+    <div class="banner">
+      <img src="./images/5.jpg" alt="" />
+      <img src="./images/4.jpg" alt="" />
+    </div>
+
+    <span>one</span>
+    <span>four</span>
+
+</div>
+
+    <div id="header">
+      <img src="./images/img2.jpg" alt="" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quam
+        voluptatem exercitationem nostrum sapiente maxime eaque voluptate
+        laudantium mollitia ea eligendi cum, voluptates eum nam debitis?
+        Repellendus explicabo voluptas molestias!
+        <a href="http://www.codekul.com">Codekul</a>
+      </p>
+    </div>
+    <span>two</span>
+    <span>three</span>
+    <div>one</div>
+    <div>two</div>
+
+    <div class="one">one</div>
+    <p>two</p>
+    <div id="one">
+      <p>
+        three
+        <a href="http://www.codekul.com">Click here</a>
+      </p>
+    </div>
+  </body>
+</html>

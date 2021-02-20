@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="../form.css">
+</head>
+<body>
+    
+<h6>Registration-Form</h6>
+    <form action="">
+
+        <fieldset>
+            <legend>Registration Form</legend>
+            <label for="name">Name</label>
+            <input id="name" type="text" minlength="6" maxlength="8" size="10" required><br>
+
+            <label for="age">Age</label>
+            <input type="number" max="45" min="18" step="5">
+    
+            <label for="">Language</label>
+            <input type="checkbox">
+            <label for="">English</label>
+            <input type="checkbox">
+            <label for="">Hindi</label>
+            <input type="checkbox">
+            <label for="">Marathi</label><br>
+    
+            <label for="">Gender</label>
+    
+            <input type="radio" name="gender">
+            <label for="">Male</label>
+    
+            <input type="radio" name="gender">
+            <label for="">Female</label><br>
+    
+            <label for="">Email</label>
+            <input type="email" required>
+    
+            <input type="submit">
+            <button type="submit">Go</button>
+    
+    
+            <!-- To create a dropdown use select elements -->
+    
+            <select>
+                <option value="">Pune</option>
+                <option value="">Mumbai</option>
+                <option value="">Delhi</option>
+            </select>
+
+
+            <select>
+                <optgroup label="Maharashtra">
+                    <option value="">Pune</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Delhi</option>
+                </optgroup>
+
+                <optgroup label="Delhi">
+                    <option value="">Pune</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Delhi</option>
+                </optgroup>
+
+                <optgroup label="Kerala">
+                    <option value="">Pune</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Delhi</option>
+                </optgroup>
+               
+            </select>
+    
+    
+            <input type="text" list="place"> 
+            <datalist id="place">
+                <option >Pune</option>
+                <option >Mumbai</option>
+                <option >Delhi</option>
+            </datalist>
+    
+            <input type="file">
+    
+    
+            <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+
+
+            <input type="password">
+
+            <textarea name="comment" id="" cols="30" rows="10"></textarea>
+
+
+    
+        </fieldset>
+
+
+
+        
+    </form>
+
+</body>
+</html>
