@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+        
+        [atrribute-name] {
+            css statements
+        } 
+
+        element name [attribute-name] {
+            css statements
+        }
+        
+        
+        */
+
+
+        [href]{
+            color: red;
+        }
+
+        img[src]{
+            height: 300px;
+            width: 400px;
+        }
+
+        [href~="com"]{
+            color: orange;
+        }
+
+        /* a[href="https://www.github.com"]{
+            color: lightcoral;
+        }
+
+It will target such element with href attribute having value com present anywhere
+        a[href*="com"]{
+            color: lawngreen;
+        } */
+
+        a[href~="com"]{
+            color: lightseagreen;
+        }
+
+
+/* target such element with an href attribute having value with http in the end  */
+        [class$="TWO"]{
+            color: lightseagreen;
+        }
+
+
+/* target such element with an href attribute having starting value with http  */
+        [href^="http"]{
+            color: magenta;
+        }
+
+
+
+       
+    </style>
+</head>
+<body>
+    <!-- Class Selector 
+    Id selector 
+    Sibling combinator (General Sibling selector, Adjacent Sibling slector)
+    Attribute Selector -->
+
+
+    <div>
+        <p>
+            <a href="http://www.codekul.com">Click here to go codekul</a>
+        </p>
+        <img src="./images/4.jpg" alt="">
+        <video src="./How to Create a Healthy Plate.mp4" muted controls autoplay aria-controls="hidden"></video>
+    </div>
+
+    <div class="onetwo">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos nemo ipsa ratione cupiditate fugiat, rem ipsum at eligendi architecto minus, maxime mollitia deleniti, recusandae autem quo veniam expedita est.
+        <a href="https://www.github.com">Visit to github</a>
+    </div>
+</body>
+</html>

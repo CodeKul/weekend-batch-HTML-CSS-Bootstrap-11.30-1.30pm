@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Document</title>
+
+    <style>
+      nav {
+        background-color: blueviolet;
+        height: 900px;
+        width: 240px;
+        float: left;
+      }
+
+      nav ul li,
+      li > a {
+        text-decoration: none;
+        list-style-type: none;
+        color: #fff;
+      }
+
+      section::first-letter{
+          color: red;
+          font-size: xx-large;
+      }
+
+      section::first-line{
+          font-style: italic;
+      }
+
+      /* li::after{
+          content: '@';
+      } */
+
+
+      .vl::after{
+          content: '';
+          height: 5px;
+          width: 2px;
+          border-right: 2px solid #fff;
+          background-color: #fff;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <nav class="sidebar">
+      <h1>Side Navbar</h1>
+      <ul>
+        <li class="vl"><a href="http://www.codekul.com">One</a></li>
+        <li class="vl">Two</li>
+        <li class="vl">Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+      </ul>
+    </nav>
+
+    <section class="text">
+    
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quis
+      repellendus nostrum distinctio tenetur incidunt amet rem laborum culpa
+      aliquam inventore dolorum, minima sequi commodi laudantium porro!
+      Incidunt, voluptate facere?
+    </section>
+  </body>
+</html>

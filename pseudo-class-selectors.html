@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      li {
+        display: inline;
+      }
+
+      a:link {
+        color: orangered;
+        background-color: purple;
+      }
+
+      a:visited {
+        color: peru;
+      }
+
+      a:hover {
+        color: seagreen;
+        font-size: xx-large;
+        background-color: snow;
+      
+      }
+
+      div p:hover{
+          color: springgreen;
+          background-color: tomato;
+          font-style: italic;
+          font-weight: 800;
+          font-size: xx-large;
+      }
+
+      input:focus{
+          color: yellow;
+          font-style: italic;
+          background-color: gray;
+      }
+
+p:last-child{
+    color: brown;
+    background-color: burlywood;
+}
+
+p:first-child{
+    color: crimson;
+    font-size: xx-large;
+}
+
+p:nth-child(5){
+    color: darkgoldenrod;
+    font-size: xx-small;
+
+}
+
+p:nth-last-child(2){
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+div p:nth-last-child(2){
+    color: chartreuse;
+}
+
+
+p:last-of-type{
+  background-color: blue;
+  color: aliceblue;
+  font-size: xx-large;
+}
+
+/* p:nth-last-of-type(3){
+  background-color: chartreuse;
+  color: red;
+  font-style: italic;
+} */
+/* p:first-of-type{
+  background-color: darkgoldenrod;
+  color: black;
+} */
+
+
+/*only of type selector is used when we want to target such element which is the only 
+type of element in its parent element*/
+p:only-of-type{
+  background-color: chartreuse;
+  color: blueviolet;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="http://www.codekul.com">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+        tenetur suscipit illum sequi. Officiis consequatur laboriosam amet magni
+        qui nihil quaerat, maxime libero corporis quam doloribus, rerum quis,
+        veniam impedit.
+      </p>
+
+      <!-- <a href="https://www.google.com">Google</a> -->
+      <!-- <p>Six</p>
+
+      <p>two</p> -->
+    </div>
+    <p>one</p>
+    <p>four</p>
+
+    
+
+    <form action="">
+        <input type="text">
+    </form>
+
+    <p>five</p>
+  </body>
+</html>
