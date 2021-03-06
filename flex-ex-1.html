@@ -11,7 +11,7 @@
             width: 100px;
             height: 100px;
             border: 2px black solid;
-            /* margin: 10px; */
+            margin: 10px;
             
         }
 
@@ -29,18 +29,50 @@
         .container{
             display: flex;
             flex-direction: row;
-            /* justify-content: space-between; */
+           
             /* justify-content: center; */
             justify-items: center;
+            justify-content: safe center;
             /* align-items: center; */
-            /* flex-wrap: wrap; */
+            justify-content:space-around;
+            flex-wrap: wrap;
+            
+
+            align-content: flex-start;
             height: 900px;
+
+            border: 2px solid red;
+        }
+
+        /* #two {
+            flex-grow: 1;
+        }
+
+        #four{
+            flex-grow: 5;
+        } */
+
+        #three{
+            /* flex-grow: 3; */
+            flex-shrink: 5;
+            flex-basis: 3;
+
+            flex: 3 2 auto;
         }
 
     </style>
 </head>
 <body>
     <div class="container">
+        <p id="one">One</p>
+        <p id="two">Two</p>
+        <p id="three">Three</p>
+        <p id="four">Four</p>
+
+        <p id="one">One</p>
+        <p id="two">Two</p>
+        <p id="three">Three</p>
+
         <p id="one">One</p>
         <p id="two">Two</p>
         <p id="three">Three</p>

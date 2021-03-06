@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+
+*{
+    font-size: 10px;
+}
+        header {
+            text-align: center;
+        }
+        li{
+            display: inline;
+        }
+
+        img{
+            height: 60px;
+            width: 60px;
+        }
+
+        main{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        section{
+            border: solid 1px red;
+        }
+        .column{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .column div{
+            display: flex;
+           
+            border: solid 1px blue;
+            
+        }
+        .column div p{
+            margin-top: 0;
+        }
+
+        .second-column{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Flexbox Page Layout</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="column">
+        <!-- <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad!
+          Corrupti excepturi voluptates ipsa eos libero sequi. Tempore nesciunt
+          harum aliquam itaque, quia pariatur maiores, laudantium sunt,
+          doloremque obcaecati maxime.
+        </p> -->
+
+        <div>
+          <img src="./images/4.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui neque
+            alias officiis accusantium saepe dolores explicabo inventore
+            
+          </p>
+        </div>
+
+        <div>
+          <img src="./images/6.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            voluptatibus harum cum ab, velit rem illum quas assumenda commodi
+            
+          </p>
+        </div>
+      </section>
+
+      <section class="second-column">
+        <img src="./images/img1.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore,
+          minima molestiae? Nulla quia commodi eligendi optio sunt libero et
+         
+        </p>
+      </section>
+
+      <section class="third-column">
+          <div class="content">
+              <img src="./images/img6.jpg" alt="">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore,
+                minima molestiae? Nulla quia commodi eligendi optio sunt libero et
+              </p>
+          </div>
+      </section>
+    </main>
+  </body>
+</html>
