@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart Grid Example</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: auto auto auto 100px;
+        grid-template-rows: 100px 150px;
+        column-gap: 10px;
+        row-gap: 10px;
+        
+      }
+
+      .grid-item {
+        border: solid 1px black;
+      }
+
+      .grid-item h5 {
+        display: inline;
+        background-color: aqua;
+      }
+
+      .grid-item-1,
+      .grid-item2,
+      .grid-item-3,
+      .grid-item-4 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      img {
+        width: 100%;
+        height: 150px;
+      }
+
+      .grid-item-2 img {
+        height: 100px;
+      }
+
+      .grid-item-5 img {
+        height: 132px;
+      }
+
+      .grid-item-2 button {
+        margin-top: 25px;
+      }
+
+      .grid-item-2 {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-item grid-item-1">
+          <center>
+            <h5>Item 1</h5>
+          </center>
+        
+        <img src="../images/3.jpg" alt="" />
+        <p><a href="https://www.flipkart.com"></a></p>
+      </div>
+
+      <div class="grid-item grid-item-2">
+        <h6>This is Grid Example</h6>
+
+        
+            <a type="button" href="https://www.google.com">Sign in Securely</a>
+            
+      </div>
+      <div class="grid-item grid-item-3">
+        <h5>Item 1</h5>
+        <img src="../images/3.jpg" alt="" />
+        <p>Item 1</p>
+      </div>
+      <div class="grid-item grid-item-4">
+        <h5>Item 1</h5>
+        <img src="../images/3.jpg" alt="" />
+        <p>Item 1</p>
+      </div>
+
+      <div class="grid-item grid-item-5">
+        <h5>Item 1</h5>
+        <img src="../images/3.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
