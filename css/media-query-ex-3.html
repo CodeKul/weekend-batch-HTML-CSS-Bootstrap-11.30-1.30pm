@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      h3,
+      li {
+        display: inline;
+      }
+
+      h1 {
+        width: 130px;
+        display: inline-block;
+        color: red;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      nav {
+        background-color: red!important;
+        padding: 8px;
+        background-color: aqua;
+      }
+      .top-news-bar {
+        display: flex;
+        flex-direction: row;
+      }
+
+      #img-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      img {
+        object-fit: cover;
+      }
+
+      .column-1 {
+          width: 30%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 200px 100px;
+      }
+
+      .column-1  img{
+        max-width: 100%;
+      }
+
+     .top-news-bar .column2 p{
+          margin-bottom: 10px;
+      }
+
+      .column-2{
+          width: 50%;
+      }
+
+      .column-3{
+          width: 30%;
+      }
+
+
+      @media all and (max-width:600px){
+          .column-1,.column-2, .column-3{
+              width: 100%;
+          }
+
+          .column-2{
+              display: none;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h3>NEWS</h3>
+      <h3>LIVE TV</h3>
+      <h1>INDIA TODAY</h1>
+      <h3>APP</h3>
+      <h3>MAGAZINE</h3>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li>My Feed</li>
+        <li>IPL</li>
+        <li>Sports</li>
+        <li>Election</li>
+        <li>Contact us</li>
+        <li>About</li>
+      </ul>
+    </nav>
+
+    <div class="top-news-bar">
+      <div class="column-1">
+        <img id="img-1" src="../images/blog-writing.jpg" alt="" />
+
+        <img src="../images//blog-writing.jpg" alt="" />
+
+        <img src="../images//blog-writing.jpg" alt="" />
+      </div>
+      <div class="column-2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa debitis
+          
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa debitis
+          necessitatibus repudiandae molestias, fuga, laudantium suscipit
+          
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa debitis
+          necessitatibus repudiandae molestias, fuga, laudantium suscipit
+         
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa debitis
+          necessitatibus repudiandae molestias, fuga, laudantium suscipit
+         
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa debitis
+          necessitatibus repudiandae molestias, fuga, laudantium suscipit
+         
+        </p>
+      
+      </div>
+      <div class="column-3">
+          <img src="../images/blog-writing.jpg" alt="">
+      </div>
+    </div>
+  </body>
+</html>
