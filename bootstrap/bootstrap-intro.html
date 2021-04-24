@@ -11,41 +11,57 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+
+    <style>
+      /* .bi{
+        font-size: 20px;
+      } */
+
+      svg{
+        color: red;
+        
+      }
+
+      i{
+        font-size: 25px;
+        color: teal;
+      }
+    </style>
   </head>
 
   <body>
+
+<img src="person-circle.svg"></img>
+
+<i class="bi bi-person-circle"></i>
+
+<i class="fas fa-user"></i>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+</svg>
+
     <div class="accordion">
       <div class="accordion-item">
         <h2 class="accordion-header" id="question-one">
-          <button type="button" data-bs-toggle="collapse" 
-          data-bs-target="#answer-one" 
-          class="accordion-button"
-          aria-expanded="false"
-          aria-controls="#answer-one">Question one / Accordion Item 1</button>
+          <button
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#answer-one"
+            class="accordion-button"
+            aria-expanded="false"
+            aria-controls="#answer-one"
+          >
+            Question one / Accordion Item 1
+          </button>
         </h2>
 
         <div id="answer-one">
-            <div class="accordion-collapse collapse show"  aria-labelledby="">
-          <div class="accordion-body">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Exercitationem, velit doloremque. Provident perferendis, omnis
-            impedit quis ea autem excepturi optio amet magnam necessitatibus
-            natus neque, incidunt molestias aliquam deserunt saepe.
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-
-        <h2 class="accordion-header">
-            <button type="button" data-bs-toggle="collapse" 
-            data-bs-target="#answer-two" 
-            class="accordion-button"
-            aria-expanded="false"
-            aria-controls="#answer-two">Question one / Accordion Item 1</button>
-          </h2>
-  
-          <div id="answer-two">
+          <div class="accordion-collapse collapse show" aria-labelledby="">
             <div class="accordion-body">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Exercitationem, velit doloremque. Provident perferendis, omnis
@@ -53,8 +69,55 @@
               natus neque, incidunt molestias aliquam deserunt saepe.
             </div>
           </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#answer-two"
+            class="accordion-button"
+            aria-expanded="false"
+            aria-controls="#answer-two"
+          >
+            Question one / Accordion Item 1
+          </button>
+        </h2>
+
+        <div id="answer-two">
+          <div class="accordion-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem, velit doloremque. Provident perferendis, omnis
+            impedit quis ea autem excepturi optio amet magnam necessitatibus
+            natus neque, incidunt molestias aliquam deserunt saepe.
+          </div>
+        </div>
       </div>
       <div class="accordion-item"></div>
+    </div>
+
+    <div class="accordion" id="faq">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" 
+          data-bs-toggle="collapse"
+          data-bs-target="#answer1" 
+          aria-expanded="true" 
+          aria-controls="collapse">Question 1</button>
+        </h2>
+
+        <div id="answer1" class="accordion-collapse collapse"
+        aria-labelledby="headingOne"
+        data-bs-parent="faq">
+          <div class="accordion-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae quae
+            possimus maxime, provident totam consequuntur culpa. Facilis
+            necessitatibus, sunt velit adipisci quos iure harum quibusdam
+            tempora accusantium et eaque atque.
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-danger">
