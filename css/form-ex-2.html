@@ -9,18 +9,26 @@
 <body>
     <form method="POST" autocomplete="on">
 
+
+        <fieldset>
+
+            <legend>Registration Form</legend>
+
         <label for="fname">Full Name</label>
-        <input autocomplete="off" id="fname" type="text"> <br>
+        <input size="10" pattern="[A-Z]" maxlength="15" minlength="5" autocomplete="off" id="fname" type="text"> <br>
 
         <label for="email">Email</label>
-        <input autocomplete="" id="email" type="email"> <br>
+        <input placeholder="xyz@example.com" autocomplete="" id="email" type="email"> <br>
 
 
         <label for="password">Password</label>
         <input type="password" name="password" id="password">
 
         <label for="age">Age</label>
-        <input type="number"> <br>
+        <input step="2" min="18" max="70" type="number"> <br>
+
+<label for="phone">Phone Number</label>
+        <input pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" type="tel">
 
         <select name="tech" id="tech">
 
@@ -32,7 +40,7 @@
 
         <label for="">Gender</label>
 
-        <input name="gender" type="radio">
+        <input checked name="gender" type="radio">
         <label for="">Male</label>
 
         <input name="gender" type="radio">
@@ -57,6 +65,8 @@
 
         <input type="date" name="" id="">
 
+        <input type="date" name="" id="">
+
 
         <label >City</label>
         <input autocomplete="on" type="text" list="city">
@@ -70,12 +80,29 @@
 
         <input type="submit" value="Login">
 
-        <button type="reset">Reset</button>
+        <button type="reset">Reset</button> <br>
 
 
+        <fieldset>
+            <legend>Select Language</legend>
+        <input type="checkbox" checked name="" id="">
+        <label for="">English</label>
+        <input type="checkbox" name="" id="">
+        <label for="">Marathi</label>
+        <input type="checkbox" name="" id="">
+        <label for="">Hindi</label>
+    </fieldset> <br> <br>
 
 
-    </form>
+        <input type="checkbox">
+        <label for="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere id earum dolore, a ad praesentium ut eius eligendi perferendis doloremque veritatis possimus eos labore repellat aut. Libero, ut atque.</label>
+
+<textarea placeholder="Message" name="" id="" cols="30" rows="10">
+    
+</textarea>
+
+</fieldset>
+    </form> <br>
 
 
     <label for="">Name</label>
